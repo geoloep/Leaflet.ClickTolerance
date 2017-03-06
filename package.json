@@ -1,0 +1,37 @@
+{
+  "name": "leaflet-clicktolerance",
+  "version": "1.0.0",
+  "description": "Adds clickTolerance option to canvas powered layers",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "./node_modules/karma/bin/karma start karma.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geoloep/Leaflet.ClickTolerance.git"
+  },
+  "author": "geoloep",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/geoloep/Leaflet.RD/issues"
+  },
+  "homepage": "https://github.com/geoloep/Leaflet.RD#readme",
+  "peerDependencies": {
+    "leaflet": "~1.0.3"
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.0.55",
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.5.0",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "karma-firefox-launcher": "^1.0.1",
+    "karma-jasmine": "^1.1.0"
+  },
+  "typings": "src/index.d.ts",
+  "keywords": [
+    "leaflet",
+    "canvas",
+    "clickTolerance",
+    "tolerance"
+  ]
+}
