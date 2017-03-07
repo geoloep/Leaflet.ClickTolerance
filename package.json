@@ -13,9 +13,9 @@
   "author": "geoloep",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/geoloep/Leaflet.RD/issues"
+    "url": "https://github.com/geoloep/Leaflet.ClickTolerance/issues"
   },
-  "homepage": "https://github.com/geoloep/Leaflet.RD#readme",
+  "homepage": "https://github.com/geoloep/Leaflet.ClickTolerance#readme",
   "peerDependencies": {
     "leaflet": "~1.0.3"
   },
