@@ -1,6 +1,6 @@
 declare namespace L {
     export interface PathOptions {
-        clickTolerance: number,
+        clickTolerance?: number,
     }
 }
 

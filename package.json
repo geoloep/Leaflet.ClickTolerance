@@ -1,6 +1,6 @@
 {
   "name": "leaflet-clicktolerance",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Adds clickTolerance option to canvas powered layers",
   "main": "src/index.js",
   "scripts": {
@@ -20,7 +20,7 @@
     "leaflet": "~1.0.3"
   },
   "devDependencies": {
-    "@types/leaflet": "^1.0.55",
+    "@types/leaflet": "1.0.55",
     "jasmine-core": "^2.5.2",
     "karma": "^1.5.0",
     "karma-phantomjs-launcher": "^1.0.2",
