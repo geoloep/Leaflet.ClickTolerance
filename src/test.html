@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Testpage</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+          integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+            integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+            crossorigin=""></script>
+    <script src="index.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0r;
+        }
+    </style>
+<body>
+<div id="map" style="width: 500px; height: 500px;"></div>
+<div id="window-log"></div>
+<div id="leaflet-log"></div>
+
+<script>
+    const windowLog = document.getElementById('window-log');
+    const leafletLog = document.getElementById('leaflet-log');
+
+    const map = L.map('map', {
+        crs: L.CRS.Simple,
+        center: [0.0, 0.0],
+        zoom: 3,
+        preferCanvas: true
+    });
+
+
+    const layer = L.polyline([[10, -10], [10, 10]], {
+        weight: 2,
+    });
+
+    const tolerantLayer = L.polyline([[-10, -10], [-10, 10]], {
+        weight: 2,
+        clickTolerance: 20,
+        color: '#F00'
+    });
+
+    layer.on('click', () => {
+       leafletLog.innerText = 'Hit blue line!';
+    });
+
+    tolerantLayer.on('click', () => {
+       leafletLog.innerText = 'Hit red line!';
+    });
+
+    layer.addTo(map);
+    tolerantLayer.addTo(map);
+
+    window.onclick = (event) => {
+        windowLog.innerText = `Clicked on ${event.clientX} x ${event.clientY}`;
+    }
+</script>
+</body>
+</html>
