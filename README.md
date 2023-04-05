@@ -1,4 +1,3 @@
-[![Build Status](https://travis-ci.org/geoloep/Leaflet.ClickTolerance.svg?branch=master)](https://travis-ci.org/geoloep/Leaflet.ClickTolerance)
 # Leaflet.ClickTolerance
 Adds a clickTolerance option to canvas powered layers. Increases the clickable area of vector layers beyond their visible extent. Useful when the stroke width of your vector layer is to narrow to create an usable clickable area.
 
