@@ -17,7 +17,7 @@
 }(function (L, proj4) {
     L.Path.include({
         _clickTolerance: function() {
-            return (this.options.clickTolerance ? this.options.clickTolerance : 0) + (this.options.stroke ? this.options.weight / 2 : 0) + (L.Browser.touch ? 10 : 0);
+            return (this.options.clickTolerance ? this.options.clickTolerance : 0) + (this.options.stroke ? this.options.weight / 2 : 0) + (this._renderer.options.tolerance || 0)
         }
     });
 }, window));
