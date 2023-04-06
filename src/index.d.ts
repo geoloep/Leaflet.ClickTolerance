@@ -5,6 +5,6 @@ declare namespace L {
 }
 
 declare module 'leaflet-clicktolerance' {
-    var e: void;
+    const e: void;
     export = e;
 }
